@@ -1,0 +1,29 @@
+# Copy to terraform.tfvars and replace placeholders. NEVER commit real values.
+
+aws_region     = "us-east-1"
+environment    = "dev"
+project_name   = "devops-platform-2026"
+
+vpc_cidr               = "10.0.0.0/16"
+availability_zones      = ["us-east-1a", "us-east-1b"]
+public_subnet_cidrs     = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs    = ["10.0.11.0/24", "10.0.12.0/24"]
+
+cluster_version   = "1.29"
+node_instance_types = ["t3.medium"]
+node_desired_size = 2
+node_min_size     = 1
+node_max_size     = 4
+
+rds_instance_class    = "db.t3.medium"
+rds_allocated_storage = 20
+rds_database_name     = "platformdb"
+rds_username          = "platformadmin"
+
+# Inject the real password from a secret store at apply time, for example:
+#   TF_VAR_rds_password="$(aws secretsmanager get-secret-value ...)" terraform apply
+rds_password = "REPLACE_ME"
+
+ecr_repository_name    = "platform-api"
+workload_namespace     = "platform"
+workload_service_account = "platform-api"

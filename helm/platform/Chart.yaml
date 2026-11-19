@@ -1,0 +1,12 @@
+apiVersion: v2
+name: platform
+description: Sample hardened workload for the devops-platform-2026 lab
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - platform
+  - eks
+  - sample
+maintainers:
+  - name: Arya Fatthurahman
