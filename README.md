@@ -1,3 +1,13 @@
+# Devops-Platform-2026
+<sub><span style="opacity: 0.85">Production-style AWS platform lab: VPC/EKS/RDS via Terraform, Helm, GitHub Actions, Prometheus/Grafana, Trivy, SLOs and runbooks.</span></sub>
+<div align="center" style="font-size: 0.9em">
+<img src="assets/brand-logo.svg" alt="Arya Fatthurahman" width="130px" />
+</div>
+
+[![CI](https://github.com/devarent/devops-platform-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/devarent/devops-platform-2026/actions/workflows/ci.yml)
+
+---
+
 
 <!-- identity-block -->
 <div align="center">
@@ -373,3 +383,9 @@ MIT. See `LICENSE`.
 <div align="center">
 <sub>Hands-on engineering, built and documented in the open.</sub>
 </div>
+## Quickstart
+
+```bash
+cd <repo>
+# Setup instructions are in the project sections above.
+```
